@@ -21,7 +21,7 @@ def test_plot_experiment_results_sample():
     #%% PLOT
 
     plot(df, xval='spectral_points', yval='calculation_time', title="Legacy_Spectral_Point",
-        color_mapper='lines_calculated', size='broadening_max_width')
+        color_mapper='lines_calculated', size=7)
 
 
     return

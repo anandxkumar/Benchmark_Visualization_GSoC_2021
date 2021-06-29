@@ -20,7 +20,8 @@ def test_plot_experiment_results_sample():
     print(files)
     #%% PLOT
 
-    plot(df, xval='broadening_max_width', yval='calculation_time', title="Legacy Voigt BMW(CO)")
+    plot(df, xval='broadening_max_width', yval='calculation_time', title="Legacy_Voigt_BMW(CO)",
+        color_mapper='lines_calculated', size='broadening_max_width')
 
 
     return

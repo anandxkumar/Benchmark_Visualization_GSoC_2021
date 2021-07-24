@@ -20,7 +20,7 @@ def test_plot_experiment_results_sample():
     print(files)
     #%% PLOT
 
-    plot(df, xval='Complexity_Voigt', yval='calculation_time', title="Complexity_Voigt_Final",
+    plot(df, xval='complexity_final_voigt', yval='calculation_time', title="Complexity_Voigt_Final",
         color_mapper=None, size='broadening_max_width', color_mapper_scale=None)
 
 

@@ -20,8 +20,8 @@ def test_plot_experiment_results_sample():
     print(files)
     #%% PLOT
 
-    plot(df, xval='complexity', yval='calculation_time', title="Legacy_complexity_vs_calculation_time",
-       size='wstep', color_mapper = 'wstep')
+    plot(df, xval='complexity_final_voigt', yval='calculation_time', title="Legacy_complexity vs calculation_time",
+       size='wstep')
 
 
     return

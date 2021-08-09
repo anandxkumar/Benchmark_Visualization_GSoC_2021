@@ -6,7 +6,7 @@ import os
 
 # Reading data from the combined data of fft and FFT
 directory = os.getcwd()
-df = pd.read_csv(directory + "Combined_Final.csv")
+df = pd.read_csv(directory + "Final2.csv")
 
 # Getting all fft broadening readings
 df_fft = df.loc[df['broadening_method'] == 'fft']
@@ -42,4 +42,4 @@ df_fft['complexity_final_fft'] = complexity_final_fft
 df_fft.plot.scatter('complexity_final_fft', 'calculation_time')
 
 # Saving Updated csv file
-df_fft.to_csv(directory + "_fft.csv", index=False)
+df_fft.to_csv(directory + "Final_Complex.csv", index=False)

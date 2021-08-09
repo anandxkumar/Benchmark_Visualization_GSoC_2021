@@ -2,9 +2,10 @@ import pandas as pd
 import numpy as np
 from statsmodels.api import OLS
 from sklearn.linear_model import LinearRegression
+import os
 
 # Reading data from the combined data of fft and FFT
-directory = "/home/pipebomb/Desktop/Visualizations/LDM UPDATED/Complexity_FFT/"
+directory = os.getcwd()
 df = pd.read_csv(directory + "Combined_Final.csv")
 
 # Getting all fft broadening readings

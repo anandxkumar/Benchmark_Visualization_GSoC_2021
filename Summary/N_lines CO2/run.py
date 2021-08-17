@@ -16,7 +16,8 @@ def test_plot_experiment_results_sample():
     files = {join(dirname(__file__),"CO2 Nlines (wL and wG) vs Calculation Time.csv"):{},
               }
     df = parse_files(files)
-
+    df.drop(columns=["profiler", "dbpath", "last_modified"], inplace=True)
+	
     print(files)
     #%% PLOT
 
